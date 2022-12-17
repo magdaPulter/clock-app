@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="main-content">
+            <div class="fetched-quote">
+                <div class="quote">
+                    <p id="quote"></p>
+                    <button id="refresh">
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                    </button>
+                </div>
+                <p id="quoteAuthor"></p>
+            </div>
+            <div class="timezone">
+                <p id='moon'><i class="fa-solid fa-moon"></i><span>Good Evening it's currently</span></p>
+                <p id='sun'><i class="fa-regular fa-sun"></i><span>Good Morning it's currently</span></p>
+                <div class="current-time-container">
+                    <h1 id="currentTime"></h1><p>Cet</p>
+                </div>
+                <p class="city">IN <span id="city"></span></p>
+            </div>
+        </div>
+        <button id="more"><span id="span-more">MORE</span><span id="less">LESS</span><svg width="40" height="40" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#303030" cx="20" cy="20" r="20"/><path stroke="#FFF" stroke-width="2" d="M14 23l6-6 6 6"/></g></svg></button>
+        <ul class="more-info"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
