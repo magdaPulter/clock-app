@@ -29,7 +29,7 @@ const showTime = async () => {
         const time = data.datetime.slice(11,16)
         currentTime.textContent = time
         currentTime.classList.add('current-time')
-        const timezone = data.timezone.slice(7,13)
+        const timezone = data.timezone.split('/')[1]
         city.textContent = timezone 
 
         const moreInfo = document.querySelector('.more-info')
